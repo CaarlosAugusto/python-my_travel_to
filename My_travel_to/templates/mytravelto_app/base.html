@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="{% static '/css/my_travel_to_style.css' %}">
   </head>
   <body class='bg-dark text-light'>
-    <nav class="nav bar navbar-expand-sm bg-warning navbar-light">
+    
+    <div class="container-fluid">
+      <nav class="nav bar navbar-expand-sm bg-warning navbar-light">
       <a class='navbar-brand ml-2 mt-auto h1' href="{%url 'index'%}">My travel to...</a>
       <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +40,6 @@
         </form>
       </div>
     </nav>
-    <div class="container">
       {% block body_block %}
       <!-- Tudo dentro desse bloco vai ser adicionado de outros arquivos html -->
       {% endblock %}
