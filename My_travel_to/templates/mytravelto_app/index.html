@@ -1,0 +1,29 @@
+{% extends 'mytravelto_app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+  <div class="row my-5">
+    <div class="col-sm-6 d-flex align-items-center">
+      <div class="">
+        <h1>My travel to... What I mean?</h1>
+        <p>I mean.. Why not to register the place that I went in a social media to other people see how actually that place is?</p>
+        <p>So, if you want to know the place before you go, why not just search in My travel to...?</p>
+        <p>You can be anywhere, anytime you want. You can know the world just with one click!</p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <img class="img-fluid" src="{% static 'img/self.png' %}" alt="Leblon Ocean">
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col-sm-6">
+      <img class='img-fluid' src="{% static 'img/selfgif.gif'%}" alt="">
+    </div>
+    <div class="col-sm-6 d-flex align-items-center">
+      <div class="">
+        <p>The idea is to people post photos in front the new coffee shop, or maybe that bar in the new city you want to go next summer.</p>
+        <p>You just post your photos to share the location to other people check the experience that you have. Describe, give a note, classify what you thoght about the place and share.</p>
+      </div>
+      </div>
+  </div>
+{% endblock %}
