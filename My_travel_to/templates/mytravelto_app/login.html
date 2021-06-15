@@ -2,21 +2,25 @@
 {% block body_block%}
 <br><br>
 <h1 class='text-center'>Please Login</h1><br>
-<div class="d-flex justify-content-center">
-  <form  action="{% url 'mytravelto_app:user_login' %}" method="post">
-    <table class='table table-striped'>
-      {%csrf_token%}
-      <tr>
-        <td><label for="username">Username:</label></td>
-        <td><input type="text" name="username" placeholder="Enter Username"></td>
-      </tr>
-      <tr>
-        <td><label for="password">Password:</label></td>
-        <td><input type="password" name="password"></td>
-      </tr>
-    </table>
-    <input class='container btn btn-warning' type="submit" value="Login">
-
-  </form>
+<div class="row">
+  <div class="col-sm d-flex justify-content-center">
+      <div class='table-responsive-sm'>
+          <form action="{% url 'mytravelto_app:user_login' %}" method="post">
+              <table class='table table-striped'>
+                {%csrf_token%}
+                <tr>
+                  <td><label for="username">Username:</label></td>
+                  <td><input type="text" name="username" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                  <td><label for="password">Password:</label></td>
+                  <td><input type="password" name="password"></td>
+                </tr>
+              </table>
+              <input class='container btn btn-warning' type="submit" value="Login">
+            </form>
+      </div>
+  </div>
 </div>
+
 {%endblock%}
